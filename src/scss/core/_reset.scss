@@ -351,10 +351,13 @@ template {
 }
 
 * {
-  box-sizing: border-box;
   color: inherit;
   list-style-type: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: $font-ligth;
+  font-size: 18px;
 }

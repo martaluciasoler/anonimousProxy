@@ -6,9 +6,8 @@
   align-items: center;
   text-align: center;
   font-size: 16px;
-  padding-bottom: 45px;
 
-  &__button {
+  &__nav {
     background: $color-ligth url(../images/ico-arrow.svg) center no-repeat;
     border-radius: 100%;
     height: 45px;
@@ -19,33 +18,63 @@
     a {
       padding: 3px;
     }
-  }
-
-  &__ul {
-    padding-top: 60px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  &__social {
-    padding-top: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-
-  &__copi {
-    line-height: 30px;
-    font-size: 14px;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    p {
-      text-transform: lowercase;
+    &--ul {
+      padding-top: 60px;
+      line-height: 30px;
+      text-transform: uppercase;
     }
-    &--heart {
-      width: 13px;
-      height: 13px;
-      background: url(../images/heart.png);
-      background-size: contain;
-      display: inline-block;
+    &--social {
+      padding-top: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+    &--copi {
+      line-height: 30px;
+      font-size: 14px;
+      padding-top: 30px;
+      padding-bottom: 45px;
+      p {
+        text-transform: lowercase;
+      }
+      .heart {
+        width: 13px;
+        height: 13px;
+        background: url(../images/heart.png);
+        background-size: contain;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    text-align: inherit;
+  }
+  .footer__tablet {
+    display: grid;
+    padding-left: 50px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px;
+
+    .itema {
+      grid-column: 3/5;
+    }
+    .itemb {
+      padding-top: 40px;
+      grid-column: 5/6;
+      padding-left: 50px;
+    }
+    .itemc {
+      position: relative;
+      bottom: 120px;
+      padding-top: 100px;
+      grid-column: 1/2;
+      right: 30px;
+
+      .footerp {
+        display: flex;
+      }
     }
   }
 }
