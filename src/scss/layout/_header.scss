@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
+
+.button_burguer {
+  width: 44px;
+  height: 44px;
+  z-index: 1;
+  background: $color_burguer url(../images/ico-menu.svg) center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    padding: 25px;
+  }
+}

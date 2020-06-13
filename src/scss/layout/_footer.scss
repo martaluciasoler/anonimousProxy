@@ -1,0 +1,51 @@
+.footer {
+  background-color: $color-footer;
+  color: $color-ligth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 45px;
+
+  &__button {
+    background: $color-ligth url(../images/ico-arrow.svg) center no-repeat;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    margin-top: -25px;
+    background-position: center;
+
+    a {
+      padding: 3px;
+    }
+  }
+
+  &__ul {
+    padding-top: 60px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__social {
+    padding-top: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__copi {
+    line-height: 30px;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    p {
+      text-transform: lowercase;
+    }
+    &--heart {
+      width: 13px;
+      height: 13px;
+      background: url(../images/heart.png);
+      background-size: contain;
+      display: inline-block;
+    }
+  }
+}

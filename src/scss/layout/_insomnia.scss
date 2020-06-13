@@ -1,0 +1,46 @@
+.insomnia {
+  background-color: $color-ligth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+
+  &__items {
+    justify-content: center;
+    align-items: center;
+    &--small {
+      margin-bottom: 5px;
+      line-height: 30px;
+      color: $color-insomnia;
+    }
+    &--h2 {
+      font-family: $font-main;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &--p {
+      line-height: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    &--buttom {
+      width: 76px;
+      height: 45px;
+      border-width: 2px;
+      border-color: $color-bottom;
+      border-style: solid;
+      border-radius: 22.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: $color-bottom;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 30px;
+      }
+    }
+  }
+}
