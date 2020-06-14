@@ -73,9 +73,14 @@
       }
       .itemc {
         position: relative;
-        right: 520px;
+        right: 300px;
+
+        @media all and (min-width: 768px) {
+          right: 500px;
+        }
+
         @media all and (min-width: 1280px) {
-          right: 600px;
+          right: 750px;
         }
       }
     }

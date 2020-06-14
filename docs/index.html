@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>evaluacion</title>
+    <title>Animous.proxy</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
       rel="stylesheet"
@@ -18,20 +18,20 @@
   <body>
     <header class="header">
       <div class="button_burguer">
-        <a href="https://adalab.es/" title="Ir a Adalab"></a>
+        <a href="https://adalab.es/"></a>
       </div>
     </header>
 
     <main id="inicio">
-      <section class="main__hero">
-        <div class="main__hero--items">
+      <section class="main">
+        <div class="main__hero">
           <h1 class="h1">
             <span>anonymous</span>
             <span>proxy</span>
           </h1>
           <small class="small">In hac habitasse platea dictumst.</small>
         </div>
-        <div class="buttomhero">
+        <div class="main__hero--buttom">
           <a href="#reasons" title="Ir abajo" target="local"
             ><img src="./assets/images/ico-scroll-down.svg" alt="flecha"
           /></a>
@@ -41,16 +41,14 @@
 
     <section class="insomnia">
       <div class="insomnia__items">
-        <small class="insomnia__items--small">Isomnia tips</small>
+        <small class="insomnia__items--small">isomnia tips</small>
         <h2 class="insomnia__items--h2">
-          Looking Through A <br />
-          Window
+          Looking Through A
+          <span>Window</span>
         </h2>
         <p class="insomnia__items--p">
-          Donec accumsan, nulla ut volutpat <br />
-          porttitor, quam odio tempus felis, at <br />
-          luctus ex diam nec lectus. Vivamus <br />
-          semper sodales rutrum.
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
         <div class="insomnia__items--buttom">
           <a href="https://adalab.es/" title="Ir a Adalab">Go</a>
@@ -60,27 +58,24 @@
 
     <section class="reasonsection" id="reasons">
         <h3 class="h3">3 Reasons To Purchase</h3>
-        <article>
+        <article class="reasonitems">
           <ul class="reasonsection_ul">
             <li class="reasonsection_ul--item1">
               <h4 class="h4">Ut sed metus</h4>
-              <p>
-                Lorem ipsum dolor sit <br />
-                amet, consectetur.
+              <p class="rp">
+                Lorem ipsum dolor sit amet, consectetur.
               </p>
             </li>
             <li class="reasonsection_ul--item2">
               <h4 class="h4">Curabitur ac erat</h4>
-              <p>
-                Mauris mattis urna <br />
-                quie lorem molestie
+              <p class="rp">
+                Mauris mattis urna quies lorem molestie.
               </p>
             </li>
             <li class="reasonsection_ul--item3">
               <h4 class="h4">Morbi dictum</h4>
-              <p>
-                Aliquam in dolor et <br />
-                dolor tincidunt
+              <p class="rp">
+                Aliquam in dolor et dolor tincidunt.
               </p>
             </li>
           </ul>
@@ -92,12 +87,12 @@
     </main>
     <footer id="footer">
       <section class="footer">
-        <div class="footer__button">
+        <div class="footer__nav">
           <a href="#inicio" title="Ir arriba" target="local"></a>
         </div>
-        <nav>
-          <section>
-            <ul class="footer__ul">
+        <nav class="footer__tablet">
+          <section class="itema">
+            <ul class="footer__nav--ul">
               <li><a href="https://adalab.es/">articles</a></li>
               <li><a href="https://adalab.es/">books</a></li>
               <li><a href="https://adalab.es/">events</a></li>
@@ -105,19 +100,17 @@
               <li><a href="https://adalab.es/">tips</a></li>
             </ul>
           </section>
-          <section>
-            <ul class="footer__social">
+          <section class="itemb">
+            <ul class="footer__nav--social">
               <li><a href="https://adalab.es/">twitter</a></li>
               <li><a href="https://adalab.es/">instagram</a></li>
               <li><a href="https://adalab.es/">mastodon.social</a></li>
             </ul>
-            <div class="footer__copi">
+          </section>
+          <section class="itemc">
+            <div class="footer__nav--copi">
               <small>&copy;2017</small>
-              <p>
-                We
-                <span class="footer__copi--heart"></span>
-                components
-              </p>
+              <p>We<span class="heart"></span>components</p>
             </div>
           </section>
         </nav>
