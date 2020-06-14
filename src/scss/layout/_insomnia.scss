@@ -1,31 +1,78 @@
+//CONTAINER
+
 .insomnia {
   background-color: $color-ligth;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
-  align-items: center;
+  margin-top: 30px;
   margin-bottom: 45px;
-  margin-top: 15px;
+
+  //TABLET
+
+  @media all and (min-width: 768px) {
+    padding: 15px;
+  }
+
+  //PC
+
+  @media all and (min-width: 1280px) {
+    width: 60%;
+    padding-left: 300px;
+  }
+
+  //ITEMS
 
   &__items {
+    padding-left: 15px;
+    width: 80%;
+
+    @media all and (min-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    //items tablet
+    @media all and (min-width: 768px) {
+      width: 80%;
+      margin-left: 15px;
+    }
+
     &--small {
       margin-bottom: 5px;
       line-height: 30px;
       color: $color-insomnia;
+      text-transform: capitalize;
     }
+
+    // h2
     &--h2 {
       font-family: $font-main;
       font-size: 24px;
       line-height: 30px;
       display: flex;
       flex-direction: column;
+
+      //h2 tablet
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+      }
+      //h2 pc
+      @media all and (min-width: 1280px) {
+        flex-direction: row;
+      }
     }
+
     &--p {
       line-height: 30px;
       padding-top: 15px;
       padding-bottom: 15px;
+      @media all and (min-width: 1280px) {
+      }
     }
+    //BUTTOM
+
     &--buttom {
       width: 76px;
       height: 45px;
@@ -33,29 +80,23 @@
       border-color: $color-bottom;
       border-style: solid;
       border-radius: 22.5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexcenter();
+    }
 
-      a {
-        color: $color-bottom;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 30px;
+    a {
+      color: $color-bottom;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 30px;
+      transition: color ease 0.5s;
+      &:hover {
+        color: black;
       }
     }
-  }
-  @media all and (min-width: 768px) {
-    .insomnia__items {
-      width: 100%;
-      padding: 15px;
 
-      .insomnia__items--h2 {
-        display: flex;
-        flex-direction: row;
-        font-size: 26px;
-      }
+    @media all and (min-width: 1280px) {
+      padding: 45px;
     }
   }
 }

@@ -1,0 +1,22 @@
+@mixin flexcenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin buttom45() {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+@mixin itemsgrid {
+  flex-direction: column;
+  text-align: center;
+  line-height: 30px;
+}
+
+@mixin heigthPading {
+  padding-top: 30px;
+  line-height: 30px;
+}
