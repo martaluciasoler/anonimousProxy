@@ -23,11 +23,11 @@
     @media all and (min-width: 768px) {
       font-size: 80px;
       line-height: 106px;
+      padding-top: 200px;
     }
     @media all and (min-width: 1280px) {
       font-size: 100px;
       line-height: 132px;
-      margin-top: 150px;
     }
   }
 
@@ -38,8 +38,20 @@
     color: $color-ligth;
     margin-top: 280px;
 
-    @media all and (min-width: 1280px) {
-      margin-top: 90px;
+    &--buttom {
+      @include buttom45();
+      background-color: $color-ligth;
+      margin-top: 45px;
+      border-radius: 100%;
+      @include flexcenter();
+
+      a {
+        padding: 20px;
+      }
+
+      @media all and (min-width: 1280px) {
+        margin-bottom: 130px;
+      }
     }
 
     .small {
@@ -51,20 +63,6 @@
       }
       @media all and (min-width: 1280px) {
         font-size: 24px;
-      }
-    }
-    &--buttom {
-      @include buttom45();
-      background-color: $color-ligth;
-      margin-top: 45px;
-      border-radius: 100%;
-      @include flexcenter();
-
-      a {
-        padding: 20px;
-      }
-      @media all and (min-width: 1280px) {
-        margin-bottom: 0px;
       }
     }
   }

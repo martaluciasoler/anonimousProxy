@@ -7,25 +7,26 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 45px;
+  align-items: center;
 
   //TABLET
 
   @media all and (min-width: 768px) {
-    padding: 15px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   //PC
 
   @media all and (min-width: 1280px) {
     width: 65%;
-    padding-left: 300px;
+    padding-left: 275px;
   }
 
   //ITEMS
 
   &__items {
     padding-left: 15px;
-    width: 80%;
 
     @media all and (min-width: 1280px) {
       display: flex;
@@ -35,8 +36,6 @@
 
     //items tablet
     @media all and (min-width: 768px) {
-      width: 80%;
-      margin-left: 15px;
     }
 
     &--small {
@@ -44,6 +43,7 @@
       line-height: 30px;
       color: $color-insomnia;
       text-transform: capitalize;
+
       @media all and (min-width: 1280px) {
         font-size: 16px;
       }
@@ -71,9 +71,8 @@
       line-height: 30px;
       padding-top: 15px;
       padding-bottom: 15px;
-      @media all and (min-width: 1280px) {
-      }
     }
+
     //BUTTOM
 
     &--buttom {
@@ -99,10 +98,6 @@
       &:hover {
         color: black;
       }
-    }
-
-    @media all and (min-width: 1280px) {
-      padding: 45px;
     }
   }
 }
