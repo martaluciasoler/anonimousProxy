@@ -53,36 +53,28 @@
 
   //MEDIAQUERIES
 
+  //tablet
+
   .footer__tablet {
     @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: left;
       width: 100%;
       justify-content: space-evenly;
+
+      .reverse {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    //pc
+
+    @media all and (min-width: 1280px) {
       display: flex;
-      text-align: left;
-
-      .itema {
-        position: relative;
-        left: 170px;
-        @media all and (min-width: 1280px) {
-          left: 300px;
-        }
-      }
-      .itemb {
-        position: relative;
-        left: 200px;
-      }
-      .itemc {
-        position: relative;
-        right: 300px;
-
-        @media all and (min-width: 768px) {
-          right: 500px;
-        }
-
-        @media all and (min-width: 1280px) {
-          right: 750px;
-        }
-      }
+      width: 50%;
     }
   }
 }
