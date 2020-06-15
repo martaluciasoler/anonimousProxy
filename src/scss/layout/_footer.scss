@@ -7,6 +7,7 @@
   text-align: center;
   font-size: 16px;
   padding-bottom: 40px;
+  align-items: center;
 
   //FOOTER BUTTOM
 
@@ -35,7 +36,10 @@
       @include heigthPading();
       font-size: 14px;
       padding-left: 20px;
+      padding-right: 20px;
+
       //COPYRIGHT,HEART//
+
       p {
         text-transform: lowercase;
       }
@@ -57,23 +61,15 @@
   .footer__tablet {
     @media all and (min-width: 768px) {
       display: flex;
-      flex-direction: row-reverse;
-      text-align: left;
       width: 768px;
       justify-content: space-evenly;
-
+      flex-direction: row-reverse;
+      text-align: left;
       .reverse {
-        width: 80%;
         display: flex;
-        justify-content: space-evenly;
+        width: 420px;
+        justify-content: space-between;
       }
-    }
-
-    //pc
-
-    @media all and (min-width: 1280px) {
-      display: flex;
-      width: 50%;
     }
   }
 }
