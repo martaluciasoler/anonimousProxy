@@ -34,8 +34,7 @@
     &--copi {
       @include heigthPading();
       font-size: 14px;
-      padding-bottom: 45px;
-
+      padding-left: 20px;
       //COPYRIGHT,HEART//
       p {
         text-transform: lowercase;
@@ -60,7 +59,7 @@
       display: flex;
       flex-direction: row-reverse;
       text-align: left;
-      width: 100%;
+      width: 768px;
       justify-content: space-evenly;
 
       .reverse {
