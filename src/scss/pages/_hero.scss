@@ -12,16 +12,31 @@
     height: 768px;
   }
 
+  .h1 {
+    @include flexcenter();
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: $font-main;
+    flex-direction: column;
+    line-height: 55px;
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+      margin-top: 150px;
+    }
+  }
+
   &__hero {
     @include flexcenter();
     flex-direction: column;
     flex-wrap: none;
     color: $color-ligth;
-    margin-top: 300px;
-
-    @media all and (min-width: 768px) {
-      margin-top: 120px;
-    }
+    margin-top: 280px;
 
     @media all and (min-width: 1280px) {
       margin-top: 90px;
@@ -38,27 +53,6 @@
         font-size: 24px;
       }
     }
-
-    .h1 {
-      @include flexcenter();
-      font-size: 42px;
-      text-transform: uppercase;
-      font-family: $font-main;
-      flex-direction: column;
-      line-height: 55px;
-
-      @media all and (min-width: 768px) {
-        font-size: 80px;
-        line-height: 106px;
-        padding-top: 250px;
-
-        @media all and (min-width: 1280px) {
-          font-size: 100px;
-          line-height: 132px;
-        }
-      }
-    }
-
     &--buttom {
       @include buttom45();
       background-color: $color-ligth;

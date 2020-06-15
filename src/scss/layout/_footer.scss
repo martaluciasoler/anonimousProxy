@@ -65,10 +65,18 @@
       justify-content: space-evenly;
       flex-direction: row-reverse;
       text-align: left;
+      .footer__nav--copi {
+        width: 250px;
+      }
+
       .reverse {
         display: flex;
-        width: 420px;
+        width: 518px;
         justify-content: space-between;
+
+        .itemb {
+          padding-right: 80px;
+        }
       }
     }
   }
